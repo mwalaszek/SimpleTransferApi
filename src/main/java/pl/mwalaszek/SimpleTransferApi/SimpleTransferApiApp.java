@@ -38,7 +38,7 @@ public class SimpleTransferApiApp extends ResourceConfig {
         ResourceConfig resourceConfig = new ResourceConfig();
         initSampleAccounts(serviceContainer);
 
-        resourceConfig.register(new BankTransferResource(serviceContainer.getTransferService(), serviceContainer.getAccountsService()));
+        resourceConfig.register(new BankTransferResource(serviceContainer.getTransferService()));
         resourceConfig.register(new AccountResource(serviceContainer.getAccountsService()));
         resourceConfig.register(new GenericExceptionMapper());
         return resourceConfig;
