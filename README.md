@@ -27,7 +27,7 @@ Application has following REST endpoints:
       "sourceAccountIban": "DE75512108001245126199", 
       "destinationAccountIban": "PL10105000997603123456789123",
       "value": 50,
-       "sourceSystemId": "tetst" 
+      "sourceSystemId": "testSystem" 
   }
   ``` 
   
